@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Water Into Wine Weddings | Shanan Fernandes</title>
+  <meta name="description" content="Water Into Wine Weddings — wedding planning by Shanan Fernandes. Refined, personal celebrations with wine-deep colour and quiet luxury.">
+  <meta name="keywords" content="Water Into Wine Weddings, Shanan Fernandes, wedding planner">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #0b090a;
+      --panel: #1b1517;
+      --cream: #f6eee6;
+      --cream-dim: #d7c6ba;
+      --muted: #a8948c;
+      --wine: #7a1c32;
+      --wine-bright: #9b2b44;
+      --gold: #c9a07a;
+    }
+
+    body {
+      background: var(--ink) !important;
+      color: var(--cream) !important;
+      font-family: "Outfit", sans-serif !important;
+    }
+
+    h1, h2, h3, h4, h5, .sitename, .hero h2 {
+      font-family: "Cormorant Garamond", serif !important;
+      font-weight: 400 !important;
+      color: var(--cream) !important;
+    }
+
+    p, li, span, a {
+      color: inherit;
+    }
+
+    .header {
+      background: rgba(11, 9, 10, 0.72) !important;
+    }
+
+    .header .sitename,
+    .header .logo h1 {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 1.15rem !important;
+    }
+
+    .navmenu a {
+      color: var(--cream-dim) !important;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem !important;
+    }
+
+    .navmenu a:hover,
+    .navmenu a.active {
+      color: var(--cream) !important;
+    }
+
+    .btn-getstarted,
+    .cta-btn,
+    .btn-primary,
+    .btn-accent,
+    .php-email-form button,
+    .profile-actions .btn-primary {
+      background: var(--wine) !important;
+      border-color: var(--wine-bright) !important;
+      color: var(--cream) !important;
+      border-radius: 0 !important;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .hero.dark-background {
+      background: var(--ink) !important;
+    }
+
+    .hero img {
+      filter: brightness(0.55) saturate(0.85) contrast(1.08);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(11,9,10,.45) 0%, rgba(11,9,10,.25) 40%, rgba(11,9,10,.82) 100%);
+      pointer-events: none;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+        .hero h2 {
+      font-size: clamp(2.8rem, 8.5vw, 7rem) !important;
+      line-height: 1 !important;
+      letter-spacing: -0.01em;
+      text-transform: none;
+      margin: 0 auto;
+    }
+
+    .hero h2 .hero-brand {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .hero h2 .hero-sub {
+      display: block;
+      font-size: 0.42em;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      margin-top: 10px;
+      font-family: "Outfit", sans-serif !important;
+      font-weight: 400 !important;
+    }
+
+    .hero .hero-byline {
+      color: var(--gold) !important;
+      font-family: "Cormorant Garamond", serif !important;
+      font-style: italic;
+      font-size: clamp(1.15rem, 2.4vw, 1.7rem) !important;
+      letter-spacing: 0.16em;
+      margin-top: 14px;
+    }
+
+    .hero p,
+    .hero .typed {
+      color: var(--gold) !important;
+    }
+
+    .social-links a,
+    .social-connect a {
+      color: var(--cream) !important;
+      border: 1px solid rgba(246, 238, 230, 0.18);
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 4px;
+    }
+
+    .social-links a:hover,
+    .social-connect a:hover {
+      background: var(--wine) !important;
+      color: var(--cream) !important;
+    }
+
+    .section {
+      background: var(--ink) !important;
+      color: var(--cream) !important;
+    }
+
+    .section-title .subtitle {
+      color: var(--gold) !important;
+    }
+
+    .section-title h2,
+    .section-title p {
+      color: var(--cream) !important;
+    }
+
+    .section-title p {
+      color: var(--muted) !important;
+    }
+
+    .profile-card,
+    .service-item,
+    .portfolio-card,
+    .info-item,
+    .cta-box,
+    .quote-card,
+    .php-email-form,
+    .footer {
+      background: var(--panel) !important;
+      color: var(--cream) !important;
+      border-color: rgba(246, 238, 230, 0.1) !important;
+    }
+
+    .footer,
+    .footer a,
+    .footer p,
+    .footer h4 {
+      color: var(--cream-dim) !important;
+      background: #0b090a !important;
+    }
+
+    .icon-wrapper,
+    .section-tag,
+    .project-category,
+    .role {
+      color: var(--gold) !important;
+    }
+
+    .progress-bar {
+      background: var(--wine) !important;
+    }
+
+    .php-email-form input,
+    .php-email-form textarea {
+      background: transparent !important;
+      color: var(--cream) !important;
+      border: 0 !important;
+      border-bottom: 1px solid rgba(246, 238, 230, 0.2) !important;
+      border-radius: 0 !important;
+    }
+
+    .quote-card {
+      padding: 28px 24px;
+      height: 100%;
+    }
+
+    .quote-card p {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-size: 1.25rem;
+    }
+
+    .quote-card footer {
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      margin-top: 18px;
+    }
+	    .hero a,
+    .hero h2,
+    .hero h2 span,
+    .hero p,
+    .hero .typed,
+    .hero .typed-cursor,
+    .hero .hero-byline,
+    .navmenu a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      box-shadow: none !important;
+    }
+	
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Water Into Wine</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Start Planning</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+     <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero.jpg" alt="Water Into Wine Weddings" data-aos="fade-in">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2><span class="hero-brand">Water Into Wine</span><span class="hero-sub">Weddings</span></h2>
+                <p class="hero-byline" spellcheck="false">by <span class="typed" data-typed-items="Shanan Virginia"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" aria-label="Instagram @waterintowineweddings"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About Me</span>
+        <h2>About Me</h2>
+        <p>Personality is the point. If we work together we will spend a lot of time in each other’s company — so it matters that you know the person behind Water Into Wine Weddings.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-avatar">
+                  <img src="assets/img/shannan.jpeg" class="img-fluid" alt="Shanan Fernandes">
+                </div>
+                <h3>Shanan Fernandes</h3>
+                <span class="role">Founder | Lead Wedding Planner</span>
+              </div>
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <h4>Full</h4>
+                  <p>Planning</p>
+                </div>
+                <div class="stat-item">
+                  <h4>Partial</h4>
+                  <p>Support</p>
+                </div>
+                <div class="stat-item">
+                  <h4>Day-of</h4>
+                  <p>Direction</p>
+                </div>
+              </div>
+              <div class="profile-actions">
+                <a href="#contact" class="btn-primary"><i class="bi bi-envelope"></i> Contact</a>
+                <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" class="btn-secondary"><i class="bi bi-instagram"></i> Instagram</a>
+              </div>
+              <div class="social-connect">
+                <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="bio-section">
+                <div class="section-tag">About Shanan</div>
+                <h2>Turning water into wine</h2>
+                <p>Shanan Fernandes is the person behind Water Into Wine Weddings. She plans with a planner’s eye and a host’s instinct — the details that make a room feel considered, and the pacing that lets people actually enjoy it.</p>
+                <p>Replace this paragraph with Shanan’s own story: how the studio began, where she plans, what she loves about weddings, and the kind of couples she works best with. The name is the brief: take something already good and make it abundant.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                  <i class="bi bi-briefcase"></i>
+                  <div class="detail-content">
+                    <span>Role</span>
+                    <strong>Founder &amp; lead planner</strong>
+                  </div>
+                </div>
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="detail-content">
+                    <span>Based</span>
+                    <strong>Add city / region</strong>
+                  </div>
+                </div>
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-instagram"></i>
+                  <div class="detail-content">
+                    <span>Instagram</span>
+                    <strong>@waterintowineweddings</strong>
+                  </div>
+                </div>
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <strong>hello@waterintowineweddings.com</strong>
+                  </div>
+                </div>
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
+                  <i class="bi bi-phone"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <strong>+91 8080936596</strong>
+                  </div>
+                </div>
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-calendar-heart"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Taking 2026 / 2027 dates</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Services</span>
+        <h2>Services</h2>
+        <p>Collaborative planning — advising, not dictating — so you can be a guest at your own wedding.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-calendar-heart"></i>
+              </div>
+              <h4>Full Planning</h4>
+              <p>From first conversation to last dance. Venue, suppliers, design, budget, guest communication and on-the-day direction.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item featured">
+              <div class="featured-tag">Most loved</div>
+              <div class="icon-wrapper">
+                <i class="bi bi-layers"></i>
+              </div>
+              <h4>Partial Planning</h4>
+              <p>For couples who have started, and want a steady hand to refine the vision, lock the remaining pieces, and run the day.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-stars"></i>
+              </div>
+              <h4>On-the-Day</h4>
+              <p>Timelines, vendor management and presence on site so you can stay in the room — not in the logistics.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-box">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h3>The best wine is kept until now</h3>
+                  <p>If you are looking for a planner, Shanan would love to hear about the day you want to host.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                  <a href="#contact" class="cta-btn">Book a conversation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Portfolio</span>
+        <h2>Portfolio &amp; Gallery</h2>
+        <p>Replace these images with Shanan’s wedding photographs. Keep the filenames below, or change the src to match your files.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All Work</li>
+            <li data-filter=".filter-ceremony">Ceremony</li>
+            <li data-filter=".filter-reception">Reception</li>
+            <li data-filter=".filter-details">Details</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ceremony">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/work-01.jpg" alt="Wedding" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Ceremony</span>
+                      <h4>Couple names</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/work-01.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Venue</span>
+                    <span class="tag">Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reception">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/work-02.jpg" alt="Reception" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Reception</span>
+                      <h4>Couple names</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/work-02.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Venue</span>
+                    <span class="tag">Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-details">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/work-03.jpg" alt="Details" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Details</span>
+                      <h4>Tablescape</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/work-03.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Design</span>
+                    <span class="tag">Florals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ceremony">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/work-04.jpg" alt="Wedding" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Ceremony</span>
+                      <h4>Couple names</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/work-04.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Venue</span>
+                    <span class="tag">Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reception">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/work-05.jpg" alt="Dance floor" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Reception</span>
+                      <h4>Dance floor</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/work-05.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Party</span>
+                    <span class="tag">Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-details">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/work-06.jpg" alt="Portrait" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Portraits</span>
+                      <h4>Couple names</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/work-06.jpg" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Portraits</span>
+                    <span class="tag">Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Testimonials</span>
+        <h2>From our couples</h2>
+        <p>Replace these with real reviews when you have them.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <blockquote class="quote-card">
+              <p>“Shanan made the planning feel easy and the day itself feel like us. Nothing was missed, and we actually got to be present.”</p>
+              <footer>Ram & Sita · 1994</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <blockquote class="quote-card">
+              <p>“Calm, precise, and quietly stylish. Our guests still talk about the atmosphere.”</p>
+              <footer>Couple name · Year</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <blockquote class="quote-card">
+              <p>“We wanted something beautiful that did not feel stiff. That is exactly what we got.”</p>
+              <footer>Couple name · Year</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Contact</h2>
+        <p>If you are looking for a wedding planner, Shanan would love to hear from you.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-item d-flex">
+              <div class="icon-wrapper">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener">@waterintowineweddings</a></p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <div class="icon-wrapper">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@waterintowineweddings.com">hello@waterintowineweddings.com</a></p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <div class="icon-wrapper">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h3>Call</h3>
+                <p>Add phone number</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <div class="icon-wrapper">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <h3>Based</h3>
+                <p>Add city / region</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="date" placeholder="Wedding date">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="venue" placeholder="Venue / location">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Tell Shanan about the day" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Water Into Wine</span>
+          </a>
+          <p>Wedding planning by Shanan Fernandes. Relaxed on the surface. Precise underneath.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Shanan Fernandes</p>
+          <p>Water Into Wine Weddings</p>
+          <p class="mt-4"><strong>Instagram:</strong> <span>@waterintowineweddings</span></p>
+          <p><strong>Email:</strong> <span>hello@waterintowineweddings.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Water Into Wine Weddings</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">cdesouzagoa</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
