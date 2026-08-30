@@ -253,6 +253,37 @@
       box-shadow: none !important;
     }
 	
+	    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 9999;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #7a1c32 !important;
+      color: #f6eee6 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.55rem;
+      box-shadow: 0 10px 30px rgba(122, 28, 50, 0.45);
+      text-decoration: none !important;
+      border: 1px solid #9b2b44;
+    }
+    .whatsapp-float:hover {
+      background: #9b2b44 !important;
+      color: #f6eee6 !important;
+    }
+	
+	    #scroll-top,
+    .scroll-top {
+      display: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      visibility: hidden !important;
+    }
+	
   </style>
 </head>
 
@@ -290,7 +321,7 @@
   <main class="main">
 
      <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero.jpg" alt="Water Into Wine Weddings" data-aos="fade-in">
+      <img src="assets/img/hero.png" alt="Water Into Wine Weddings" data-aos="fade-in">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
@@ -707,6 +738,7 @@
               </div>
             </div>
           </div>
+		  
 
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form">
@@ -753,7 +785,8 @@
           </a>
           <p>Wedding planning by Shanan Fernandes. Relaxed on the surface. Precise underneath.</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/waterintowineweddings/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/447000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
         <div class="col-lg-3 col-6 footer-links">
@@ -779,10 +812,15 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Water Into Wine Weddings</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">cdesouzagoa</a>
+        Designed by <a href="https://villacaetano.com">cdesouzagoa</a>
       </div>
     </div>
   </footer>
+  
+    <a class="whatsapp-float" href="https://wa.me/447000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
